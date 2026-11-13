@@ -1,4 +1,4 @@
-# Foldron
+<p align="center"><img src="banniere.png" alt="Foldron — Folia + Fabric, un seul jar" width="640"></p>
 
 Serveur Minecraft Java hybride : le **moteur Folia** (régions multi-fils de PaperMC) et **Fabric Loader** dans
 la même JVM. De vrais mods Fabric et de vrais plugins Folia sur le même serveur, livré en **un seul jar** qui

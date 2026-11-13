@@ -1,0 +1,23 @@
+name: Défaut
+description: Le serveur plante, se bloque ou se comporte mal
+labels: ["défaut"]
+body:
+  - type: input
+    id: version
+    attributes: { label: "Sortie de /version" }
+    validations: { required: true }
+  - type: textarea
+    id: mods
+    attributes: { label: "Mods et plugins installés (avec leur version)" }
+    validations: { required: true }
+  - type: textarea
+    id: etapes
+    attributes: { label: "Étapes pour reproduire" }
+    validations: { required: true }
+  - type: textarea
+    id: observe
+    attributes: { label: "Ce qui se passe, et ce qui était attendu" }
+    validations: { required: true }
+  - type: textarea
+    id: journal
+    attributes: { label: "Journal (logs/latest.log) ou rapport de plantage", render: text }

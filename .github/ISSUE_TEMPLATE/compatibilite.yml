@@ -1,0 +1,23 @@
+name: Compatibilité d'un mod ou d'un plugin
+description: Un mod Fabric ou un plugin Folia ne démarre pas ou ne fonctionne pas sous Foldron
+labels: ["compatibilité"]
+body:
+  - type: input
+    id: mod
+    attributes: { label: "Mod ou plugin, version, lien" }
+    validations: { required: true }
+  - type: dropdown
+    id: etat
+    attributes:
+      label: "État"
+      options: ["Refusé par le pré-vol", "Plante au démarrage", "Démarre mais ne fonctionne pas", "Fonctionne en partie"]
+    validations: { required: true }
+  - type: textarea
+    id: rapport
+    attributes: { label: "Contenu de .foldron/prevol/rapport.txt", render: text }
+  - type: textarea
+    id: journal
+    attributes: { label: "Journal (logs/latest.log)", render: text }
+  - type: textarea
+    id: regions
+    attributes: { label: "foldron.json, si vous en avez un", render: json }
